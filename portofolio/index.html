@@ -1,0 +1,273 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Razan Smith - Portfolio
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1b1b2f;
+            color: #fff;
+        }
+        .header {
+            background: url('background.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 20px 0 10px;
+            color: #ff4c60;
+        }
+        .header p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .header .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+        }
+        .about, .services {
+            padding: 60px 20px;
+            background-color: #162447;
+        }
+        .about h2, .services h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff4c60;
+        }
+        .about p, .services p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .about .content, .services .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about .content img {
+            width: 300px;
+            height: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .about .content .text {
+            max-width: 600px;
+        }
+        .about .content .text h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff4c60;
+        }
+        .about .content .text .info {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .about .content .text .info div {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .about .content .text .info div span {
+            display: block;
+            font-weight: bold;
+        }
+        .about .content .text .info div p {
+            margin: 0;
+        }
+        .about .content .text .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4c60;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .services .service {
+            width: 30%;
+            background-color: #1b1b2f;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .services .service i {
+            font-size: 40px;
+            color: #ff4c60;
+            margin-bottom: 10px;
+        }
+        .services .service h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .about .content, .services .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about .content img, .about .content .text {
+                max-width: 100%;
+            }
+            .services .service {
+                width: 100%;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <header class="header">
+   <img alt="Profile picture of Razan Smith" src="profile.jpg"/>
+   <h1>
+    hu tao
+   </h1>
+   <p>
+    A Creative Freelancer &amp; Full Stack Developer
+   </p>
+   <div class="scroll-down">
+    Scroll Down
+   </div>
+  </header>
+  <section class="about">
+   <div class="content">
+    <img alt="Portrait of hutao" src="hu tao.jpg"/>
+    <div class="text">
+     <h2>
+      Discover
+     </h2>
+     <h3>
+      About Me
+     </h3>
+     <p>
+      My name is Razan Smith. I'm a Freelance Full Stack Developer based in New York, USA, and I'm very passionate and dedicated to my work. With 6 years experience as a professional Full Stack Developer, I have acquired the skills necessary to build great and premium websites.
+     </p>
+     <div class="info">
+      <div>
+       <span>
+        Name:
+       </span>
+       <p>
+        Razan Smith
+       </p>
+      </div>
+      <div>
+       <span>
+        Age:
+       </span>
+       <p>
+        26
+       </p>
+      </div>
+      <div>
+       <span>
+        Phone:
+       </span>
+       <p>
+        +1 212 451-4127
+       </p>
+      </div>
+      <div>
+       <span>
+        Address:
+       </span>
+       <p>
+        New York, USA
+       </p>
+      </div>
+      <div>
+       <span>
+        Experience:
+       </span>
+       <p>
+        6 Years
+       </p>
+      </div>
+      <div>
+       <span>
+        Freelance:
+       </span>
+       <p>
+        Available
+       </p>
+      </div>
+      <div>
+       <span>
+        Skype:
+       </span>
+       <p>
+        razan.smith
+       </p>
+      </div>
+      <div>
+       <span>
+        Dribbble:
+       </span>
+       <p>
+        smith.dribbble
+       </p>
+      </div>
+     </div>
+     <a class="download-btn" href="projct.html">
+      Projek
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="services">
+   <h2>
+    What I Do
+   </h2>
+   <h3>
+    My Services
+   </h3>
+   <div class="content">
+    <div class="service">
+     <i class="fas fa-paint-brush">
+     </i>
+     <h3>
+      Creative Design
+     </h3>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et.
+     </p>
+    </div>
+    <div class="service">
+     <i class="fas fa-bullhorn">
+     </i>
+     <h3>
+      Branding
+     </h3>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et.
+     </p>
+    </div>
+    <div class="service">
+     <i class="fas fa-code">
+     </i>
+     <h3>
+      User Interface
+     </h3>
+     <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et.
+     </p>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menampilkan Gambar dari File Lokal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <input type="file" id="fileInput" accept="image/*">
+    <button id="showImageBtn">Tampilkan Gambar</button>
+    <img id="image" src="" alt="Gambar" style="display:none;">
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+
+    <script>
+        // Pastikan DOM sudah dimuat sebelum menjalankan kode
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ambil elemen input file, tombol, dan gambar
+            const fileInput = document.getElementById('fileInput');
+            const button = document.getElementById('showImageBtn');
+            const image = document.getElementById('image');
+
+            // Tambahkan event listener untuk tombol
+            button.addEventListener('click', function() {
+                const file = fileInput.files[0]; // Ambil file yang dipilih
+                if (file) {
+                    const reader = new FileReader(); // Buat FileReader untuk membaca file
+                    reader.onload = function(e) {
+                        image.src = e.target.result; // Set src gambar dengan hasil pembacaan
+                        image.style.display = 'block'; // Menampilkan gambar
+                    }
+                    reader.readAsDataURL(file); // Baca file sebagai URL data
+                } else {
+                    alert("Silakan pilih gambar terlebih dahulu.");
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("darkModeToggle");
+            const body = document.body;
+
+            if (localStorage.getItem("darkMode") === "enabled") {
+                body.classList.add("dark-mode");
+            }
+
+            toggleButton.addEventListener("click", function () {
+                body.classList.toggle("dark-mode");
+
+                if (body.classList.contains("dark-mode")) {
+                    localStorage.setItem("darkMode", "enabled");
+                } else {
+                    localStorage.setItem("darkMode", "disabled");
+                } 
+            });
+        });
+
+
+
+ 
+ 
+    </script>
+</body>
+</html>

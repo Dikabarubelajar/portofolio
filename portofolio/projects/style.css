@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f6;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    max-width: 100%; /* Agar gambar tidak melebihi lebar kontainer */
+    height: auto;    /* Menjaga rasio aspek gambar */
+}
+
+/* Default Light Mode */
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Styling tombol Dark Mode */
+#darkModeToggle {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Efek hover dan klik */
+#darkModeToggle:hover {
+    background: linear-gradient(135deg, #e52e71, #ff8a00);
+}
+
+#darkModeToggle:active {
+    transform: scale(0.95);
+}
+
+/* Tambahkan efek transisi */
+.dark-mode #darkModeToggle {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
